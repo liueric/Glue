@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2A928491913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
+		A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284A1913085900B6A745 /* CoreGraphics.framework */; };
+		A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
+		A2A928531913085900B6A745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2A928511913085900B6A745 /* InfoPlist.strings */; };
+		A2A928551913085900B6A745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A928541913085900B6A745 /* main.m */; };
+		A2A928591913085900B6A745 /* LIUAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A928581913085900B6A745 /* LIUAppDelegate.m */; };
+		A2A9285C1913085900B6A745 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A9285A1913085900B6A745 /* Main.storyboard */; };
+		A2A9285F1913085900B6A745 /* LIUMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A9285E1913085900B6A745 /* LIUMasterViewController.m */; };
+		A2A928621913085900B6A745 /* LIUDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A928611913085900B6A745 /* LIUDetailViewController.m */; };
+		A2A928641913085900B6A745 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A928631913085900B6A745 /* Images.xcassets */; };
+		A2A9286B1913085900B6A745 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9286A1913085900B6A745 /* XCTest.framework */; };
+		A2A9286C1913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
+		A2A9286D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
+		A2A928751913085900B6A745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2A928731913085900B6A745 /* InfoPlist.strings */; };
+		A2A928771913085900B6A745 /* GlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A928761913085900B6A745 /* GlueTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2A9286E1913085900B6A745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2A9283D1913085900B6A745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2A928441913085900B6A745;
+			remoteInfo = Glue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2A928451913085900B6A745 /* Glue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A928481913085900B6A745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A2A9284A1913085900B6A745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A2A9284C1913085900B6A745 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A2A928501913085900B6A745 /* Glue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Glue-Info.plist"; sourceTree = "<group>"; };
+		A2A928521913085900B6A745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2A928541913085900B6A745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2A928561913085900B6A745 /* Glue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Glue-Prefix.pch"; sourceTree = "<group>"; };
+		A2A928571913085900B6A745 /* LIUAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIUAppDelegate.h; sourceTree = "<group>"; };
+		A2A928581913085900B6A745 /* LIUAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIUAppDelegate.m; sourceTree = "<group>"; };
+		A2A9285B1913085900B6A745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2A9285D1913085900B6A745 /* LIUMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIUMasterViewController.h; sourceTree = "<group>"; };
+		A2A9285E1913085900B6A745 /* LIUMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIUMasterViewController.m; sourceTree = "<group>"; };
+		A2A928601913085900B6A745 /* LIUDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LIUDetailViewController.h; sourceTree = "<group>"; };
+		A2A928611913085900B6A745 /* LIUDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LIUDetailViewController.m; sourceTree = "<group>"; };
+		A2A928631913085900B6A745 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2A928691913085900B6A745 /* GlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A9286A1913085900B6A745 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A2A928721913085900B6A745 /* GlueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlueTests-Info.plist"; sourceTree = "<group>"; };
+		A2A928741913085900B6A745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A2A928761913085900B6A745 /* GlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlueTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2A928421913085900B6A745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */,
+				A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */,
+				A2A928491913085900B6A745 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2A928661913085900B6A745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A9286B1913085900B6A745 /* XCTest.framework in Frameworks */,
+				A2A9286D1913085900B6A745 /* UIKit.framework in Frameworks */,
+				A2A9286C1913085900B6A745 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2A9283C1913085900B6A745 = {
+			isa = PBXGroup;
+			children = (
+				A2A9284E1913085900B6A745 /* Glue */,
+				A2A928701913085900B6A745 /* GlueTests */,
+				A2A928471913085900B6A745 /* Frameworks */,
+				A2A928461913085900B6A745 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2A928461913085900B6A745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2A928451913085900B6A745 /* Glue.app */,
+				A2A928691913085900B6A745 /* GlueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2A928471913085900B6A745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2A928481913085900B6A745 /* Foundation.framework */,
+				A2A9284A1913085900B6A745 /* CoreGraphics.framework */,
+				A2A9284C1913085900B6A745 /* UIKit.framework */,
+				A2A9286A1913085900B6A745 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A2A9284E1913085900B6A745 /* Glue */ = {
+			isa = PBXGroup;
+			children = (
+				A2A928571913085900B6A745 /* LIUAppDelegate.h */,
+				A2A928581913085900B6A745 /* LIUAppDelegate.m */,
+				A2A9285A1913085900B6A745 /* Main.storyboard */,
+				A2A9285D1913085900B6A745 /* LIUMasterViewController.h */,
+				A2A9285E1913085900B6A745 /* LIUMasterViewController.m */,
+				A2A928601913085900B6A745 /* LIUDetailViewController.h */,
+				A2A928611913085900B6A745 /* LIUDetailViewController.m */,
+				A2A928631913085900B6A745 /* Images.xcassets */,
+				A2A9284F1913085900B6A745 /* Supporting Files */,
+			);
+			path = Glue;
+			sourceTree = "<group>";
+		};
+		A2A9284F1913085900B6A745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2A928501913085900B6A745 /* Glue-Info.plist */,
+				A2A928511913085900B6A745 /* InfoPlist.strings */,
+				A2A928541913085900B6A745 /* main.m */,
+				A2A928561913085900B6A745 /* Glue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2A928701913085900B6A745 /* GlueTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2A928761913085900B6A745 /* GlueTests.m */,
+				A2A928711913085900B6A745 /* Supporting Files */,
+			);
+			path = GlueTests;
+			sourceTree = "<group>";
+		};
+		A2A928711913085900B6A745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A2A928721913085900B6A745 /* GlueTests-Info.plist */,
+				A2A928731913085900B6A745 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2A928441913085900B6A745 /* Glue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A9287A1913085900B6A745 /* Build configuration list for PBXNativeTarget "Glue" */;
+			buildPhases = (
+				A2A928411913085900B6A745 /* Sources */,
+				A2A928421913085900B6A745 /* Frameworks */,
+				A2A928431913085900B6A745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glue;
+			productName = Glue;
+			productReference = A2A928451913085900B6A745 /* Glue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2A928681913085900B6A745 /* GlueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2A9287D1913085900B6A745 /* Build configuration list for PBXNativeTarget "GlueTests" */;
+			buildPhases = (
+				A2A928651913085900B6A745 /* Sources */,
+				A2A928661913085900B6A745 /* Frameworks */,
+				A2A928671913085900B6A745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2A9286F1913085900B6A745 /* PBXTargetDependency */,
+			);
+			name = GlueTests;
+			productName = GlueTests;
+			productReference = A2A928691913085900B6A745 /* GlueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2A9283D1913085900B6A745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LIU;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "ITP 342";
+				TargetAttributes = {
+					A2A928681913085900B6A745 = {
+						TestTargetID = A2A928441913085900B6A745;
+					};
+				};
+			};
+			buildConfigurationList = A2A928401913085900B6A745 /* Build configuration list for PBXProject "Glue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2A9283C1913085900B6A745;
+			productRefGroup = A2A928461913085900B6A745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2A928441913085900B6A745 /* Glue */,
+				A2A928681913085900B6A745 /* GlueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2A928431913085900B6A745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A928641913085900B6A745 /* Images.xcassets in Resources */,
+				A2A928531913085900B6A745 /* InfoPlist.strings in Resources */,
+				A2A9285C1913085900B6A745 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2A928671913085900B6A745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A928751913085900B6A745 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2A928411913085900B6A745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A928621913085900B6A745 /* LIUDetailViewController.m in Sources */,
+				A2A928551913085900B6A745 /* main.m in Sources */,
+				A2A9285F1913085900B6A745 /* LIUMasterViewController.m in Sources */,
+				A2A928591913085900B6A745 /* LIUAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2A928651913085900B6A745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2A928771913085900B6A745 /* GlueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2A9286F1913085900B6A745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2A928441913085900B6A745 /* Glue */;
+			targetProxy = A2A9286E1913085900B6A745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2A928511913085900B6A745 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2A928521913085900B6A745 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A2A9285A1913085900B6A745 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2A9285B1913085900B6A745 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2A928731913085900B6A745 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2A928741913085900B6A745 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2A928781913085900B6A745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2A928791913085900B6A745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2A9287B1913085900B6A745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
+				INFOPLIST_FILE = "Glue/Glue-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A2A9287C1913085900B6A745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
+				INFOPLIST_FILE = "Glue/Glue-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A2A9287E1913085900B6A745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Glue.app/Glue";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GlueTests/GlueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A2A9287F1913085900B6A745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Glue.app/Glue";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
+				INFOPLIST_FILE = "GlueTests/GlueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2A928401913085900B6A745 /* Build configuration list for PBXProject "Glue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A928781913085900B6A745 /* Debug */,
+				A2A928791913085900B6A745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2A9287A1913085900B6A745 /* Build configuration list for PBXNativeTarget "Glue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A9287B1913085900B6A745 /* Debug */,
+				A2A9287C1913085900B6A745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2A9287D1913085900B6A745 /* Build configuration list for PBXNativeTarget "GlueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2A9287E1913085900B6A745 /* Debug */,
+				A2A9287F1913085900B6A745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2A9283D1913085900B6A745 /* Project object */;
+}
