@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LIUBlogEntryModel.h"
+#import "LIUMasterViewController.h"
 
 @interface LIUAppDelegate : UIResponder <UIApplicationDelegate>
 

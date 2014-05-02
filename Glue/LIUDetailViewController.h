@@ -7,10 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LIUBlogEntryModel.h"
 
-@interface LIUDetailViewController : UIViewController
 
-@property (strong, nonatomic) id detailItem;
+@interface LIUDetailViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) LIUBlogEntryModel *detailItem;
+
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+@property (weak, nonatomic) IBOutlet UITextView *blogEntryTextView;
+@property (strong, nonatomic) UIImagePickerController *picker;
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
+
+- (IBAction)titleFieldTextChanged:(id)sender;
+
+- (IBAction)addPictureTapped:(id)sender;
 @end

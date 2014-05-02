@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LIUBlogEntryModel.h"
 
 @interface LIUMasterViewController : UITableViewController
+
+@property (strong) NSMutableArray *personalBlogEntries;
 
 @end

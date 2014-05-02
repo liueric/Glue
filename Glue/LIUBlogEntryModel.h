@@ -10,10 +10,11 @@
 
 @interface LIUBlogEntryModel : NSObject
 
+@property (strong) NSString *blogTitle;
 @property (strong) NSString *blogEntry;
 @property (strong) UIImage *thumbImage;
 @property (strong) UIImage *mainImage;
 
--(id)initWithEntry: (NSString *)blogEntry thumbImage:(UIImage *)thumbImage mainImage:(UIImage *)mainImage;
+-(id)initWithEntry: (NSString *)blogTitle entry:(NSString *)blogEntry thumbImage:(UIImage *)thumbImage mainImage:(UIImage *)mainImage;
 
 @end

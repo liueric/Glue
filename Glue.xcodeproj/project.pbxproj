@@ -25,6 +25,7 @@
 		A2A92885191308CF00B6A745 /* LIUBlogEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A92884191308CF00B6A745 /* LIUBlogEntryModel.m */; };
 		A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A92887191308D800B6A745 /* LIUBlogEntryViewController.m */; };
 		A2A9288B191308D800B6A745 /* LIUNewBlogEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */; };
+		A2A9288E19131D8E00B6A745 /* image_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A2A9288D19131D8E00B6A745 /* image_placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		A2A92887191308D800B6A745 /* LIUBlogEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBlogEntryViewController.m; sourceTree = "<group>"; };
 		A2A92888191308D800B6A745 /* LIUNewBlogEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUNewBlogEntryViewController.h; sourceTree = "<group>"; };
 		A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUNewBlogEntryViewController.m; sourceTree = "<group>"; };
+		A2A9288D19131D8E00B6A745 /* image_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		A2A9284E1913085900B6A745 /* Glue */ = {
 			isa = PBXGroup;
 			children = (
+				A2A9288C19131D3200B6A745 /* Resources */,
 				A2A92882191308B400B6A745 /* Views */,
 				A2A92881191308AE00B6A745 /* Controllers */,
 				A2A92880191308A800B6A745 /* Models */,
@@ -177,11 +180,11 @@
 			isa = PBXGroup;
 			children = (
 				A2A9285D1913085900B6A745 /* LIUMasterViewController.h */,
+				A2A9285E1913085900B6A745 /* LIUMasterViewController.m */,
 				A2A92886191308D800B6A745 /* LIUBlogEntryViewController.h */,
 				A2A92887191308D800B6A745 /* LIUBlogEntryViewController.m */,
 				A2A92888191308D800B6A745 /* LIUNewBlogEntryViewController.h */,
 				A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */,
-				A2A9285E1913085900B6A745 /* LIUMasterViewController.m */,
 				A2A928601913085900B6A745 /* LIUDetailViewController.h */,
 				A2A928611913085900B6A745 /* LIUDetailViewController.m */,
 			);
@@ -194,6 +197,14 @@
 				A2A9285A1913085900B6A745 /* Main.storyboard */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		A2A9288C19131D3200B6A745 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2A9288D19131D8E00B6A745 /* image_placeholder.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A928641913085900B6A745 /* Images.xcassets in Resources */,
+				A2A9288E19131D8E00B6A745 /* image_placeholder.png in Resources */,
 				A2A928531913085900B6A745 /* InfoPlist.strings in Resources */,
 				A2A9285C1913085900B6A745 /* Main.storyboard in Resources */,
 			);

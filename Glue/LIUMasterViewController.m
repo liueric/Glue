@@ -17,6 +17,8 @@
 
 @implementation LIUMasterViewController
 
+@synthesize personalBlogEntries = _personalBlogEntries;
+
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -30,6 +32,7 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     //self.navigationItem.rightBarButtonItem = addButton;
+    self.title = @"Your Entries";
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,15 +60,23 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return _objects.count;
+    //return _objects.count;
+    return _personalBlogEntries.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BlogEntryCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BlogEntryCell"];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    LIUBlogEntryModel *EntryModel = [self.personalBlogEntries objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = EntryModel.blogTitle;
+    cell.imageView.image = EntryModel.thumbImage;
+    cell.detailTextLabel.text = EntryModel.blogEntry;
+    
+    //NSDate *object = _objects[indexPath.row];
+    //cell.textLabel.text = [object description];
     return cell;
 }
 
@@ -101,11 +112,17 @@
 }
 */
 
+// Implement the method didMoveToParentViewController
+-(void)didMoveToParentViewController:(UIViewController *)parent{
+    [self.tableView reloadData];
+}
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSDate *object = _objects[indexPath.row];
+        //NSDate *object = _objects[indexPath.row];
+        LIUBlogEntryModel *object = [self.personalBlogEntries objectAtIndex:self.tableView.indexPathForSelectedRow.row];
         [[segue destinationViewController] setDetailItem:object];
     }
 }
