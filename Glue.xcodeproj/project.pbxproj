@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A232FA5A19138FEE0047455D /* LIUBlogListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FA5919138FEE0047455D /* LIUBlogListModel.m */; };
 		A2A928491913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
 		A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284A1913085900B6A745 /* CoreGraphics.framework */; };
 		A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A232FA5819138FEE0047455D /* LIUBlogListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUBlogListModel.h; sourceTree = "<group>"; };
+		A232FA5919138FEE0047455D /* LIUBlogListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBlogListModel.m; sourceTree = "<group>"; };
 		A2A928451913085900B6A745 /* Glue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A928481913085900B6A745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2A9284A1913085900B6A745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -172,6 +175,8 @@
 			children = (
 				A2A92883191308CF00B6A745 /* LIUBlogEntryModel.h */,
 				A2A92884191308CF00B6A745 /* LIUBlogEntryModel.m */,
+				A232FA5819138FEE0047455D /* LIUBlogListModel.h */,
+				A232FA5919138FEE0047455D /* LIUBlogListModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A232FA5A19138FEE0047455D /* LIUBlogListModel.m in Sources */,
 				A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */,
 				A2A9288B191308D800B6A745 /* LIUNewBlogEntryViewController.m in Sources */,
 				A2A92885191308CF00B6A745 /* LIUBlogEntryModel.m in Sources */,
@@ -517,6 +523,7 @@
 				A2A9287C1913085900B6A745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2A9287D1913085900B6A745 /* Build configuration list for PBXNativeTarget "GlueTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				A2A9287F1913085900B6A745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

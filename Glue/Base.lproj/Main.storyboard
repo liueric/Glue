@@ -64,9 +64,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="gs2-bM-lx6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="o6y-9j-jQN">
                             <connections>
-                                <segue destination="rTS-D7-UYF" kind="modal" id="Zq6-M9-CCy"/>
+                                <segue destination="rTS-D7-UYF" kind="modal" id="HNQ-iW-BbA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -196,22 +196,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XIY-PK-hZQ">
-                                <rect key="frame" x="0.0" y="11" width="320" height="547"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="backgroundTouched:" destination="rTS-D7-UYF" eventType="touchUpInside" id="kTU-dh-3si"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaZ-IJ-YH9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" keyboardDismissMode="interactive" text="What's new today?" translatesAutoresizingMaskIntoConstraints="NO" id="CXb-5M-omR">
-                                        <rect key="frame" x="0.0" y="110" width="320" height="458"/>
+                                        <rect key="frame" x="0.0" y="249" width="320" height="319"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
@@ -235,15 +225,27 @@
                                             </navigationItem>
                                         </items>
                                     </navigationBar>
-                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G4q-Ve-Bfp">
-                                        <rect key="frame" x="0.0" y="60" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                        <items>
-                                            <barButtonItem width="131" style="plain" systemItem="fixedSpace" id="N2U-37-yIS"/>
-                                            <barButtonItem systemItem="camera" id="jMe-tl-lBz"/>
-                                        </items>
-                                        <color key="barTintColor" red="0.79734205160000005" green="0.79734205160000005" blue="0.79734205160000005" alpha="1" colorSpace="calibratedRGB"/>
-                                    </toolbar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d1J-XW-YFf">
+                                        <rect key="frame" x="40" y="102" width="240" height="139"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4z-IS-xkt">
+                                        <rect key="frame" x="40" y="106" width="240" height="132"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.79734205160000005" green="0.79734205160000005" blue="0.79734205160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Click to Add Picture">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="rTS-D7-UYF" eventType="touchUpInside" id="ENv-lU-yz2"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAA-qM-bKL">
+                                        <rect key="frame" x="0.0" y="60" width="320" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
@@ -252,8 +254,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Hga-rU-9zg"/>
                     <connections>
-                        <outlet property="NewBlogEntryText" destination="CXb-5M-omR" id="6Kn-q5-aCO"/>
                         <outlet property="SaveAndDoneButton" destination="6PO-pS-93v" id="AQZ-7y-RD2"/>
+                        <outlet property="blogEntryText" destination="CXb-5M-omR" id="KTC-VZ-wpd"/>
+                        <outlet property="blogEntryTitle" destination="zAA-qM-bKL" id="Y5V-gG-mFa"/>
+                        <outlet property="blogMainImage" destination="d1J-XW-YFf" id="lZn-xq-Lb1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a8u-av-l9k" userLabel="First Responder" sceneMemberID="firstResponder"/>

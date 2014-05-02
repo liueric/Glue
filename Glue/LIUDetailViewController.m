@@ -39,6 +39,11 @@
         self.mainImageView.image = self.detailItem.mainImage;
         self.blogEntryTextView.text = self.detailItem.blogEntry;
     }
+    
+    else{
+        self.titleTextField.text = @"Enter Title";
+        self.blogEntryTextView.text = @"What's new today";
+    }
 }
 
 - (void)viewDidLoad

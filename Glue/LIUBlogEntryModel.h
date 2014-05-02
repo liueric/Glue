@@ -17,4 +17,5 @@
 
 -(id)initWithEntry: (NSString *)blogTitle entry:(NSString *)blogEntry thumbImage:(UIImage *)thumbImage mainImage:(UIImage *)mainImage;
 
+
 @end

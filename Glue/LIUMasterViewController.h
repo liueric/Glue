@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "LIUBlogEntryModel.h"
+#import "LIUBlogListModel.h"
 
 @interface LIUMasterViewController : UITableViewController
 
 @property (strong) NSMutableArray *personalBlogEntries;
+
+//+(instancetype)sharedInstance;
+//+(void) newEntryEntered: (LIUBlogEntryModel *)newEntry;
 
 @end

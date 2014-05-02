@@ -26,13 +26,15 @@
 
 - (void)viewDidLoad
 {
+    _personalBlogEntries = [[LIUBlogListModel sharedModel] personalBlogEntries];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    //self.navigationItem.rightBarButtonItem = addButton;
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
+//    self.navigationItem.rightBarButtonItem = addButton;
     self.title = @"Your Entries";
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +52,36 @@
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
+
+//- (void)addButtonTapped:(id)sender {
+//    UIImage *imagePlaceholder = [UIImage imageNamed:@"image_placeholder.png"];
+//    LIUBlogEntryModel *newEntry = [[LIUBlogEntryModel alloc] initWithEntry:@"Enter Title" entry:@"What's new today?" thumbImage:imagePlaceholder mainImage:imagePlaceholder];
+//    [_personalBlogEntries addObject:newEntry];
+//    
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_personalBlogEntries.count-1 inSection:0];
+//    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+//    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:YES];
+//    
+//    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+//    [self performSegueWithIdentifier:@"showDetail" sender:self];
+//}
+
+//+(void) newEntryEntered: (LIUBlogEntryModel *)newEntry{
+//    [_personalBlogEntries addObject:newEntry];
+//    
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:_personalBlogEntries.count-1 inSection:0];
+//    NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
+//    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:YES];
+//    
+//    NSLog(@"\n\nCompletion Handler Called\n\n");
+//    NSLog(@"\n\nEntry Count: %lu",(unsigned long)_personalBlogEntries.count);
+//    
+//    for (LIUBlogEntryModel *entry in _personalBlogEntries){
+//        NSLog(@"\n%@\n",entry.blogTitle);
+//    }
+//    //[self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+//    //[self performSegueWithIdentifier:@"showDetail" sender:self];
+//}
 
 #pragma mark - Table View
 
@@ -89,7 +121,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_objects removeObjectAtIndex:indexPath.row];
+        //[_objects removeObjectAtIndex:indexPath.row];
+        [_personalBlogEntries removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
@@ -111,6 +144,17 @@
     return YES;
 }
 */
+
+//+(instancetype) sharedInstance{
+//    static LIUMasterViewController *_sharedInstance = nil;
+//    
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        _sharedInstance = [[self alloc] init];
+//    });
+//    
+//    return _sharedInstance;
+//}
 
 // Implement the method didMoveToParentViewController
 -(void)didMoveToParentViewController:(UIViewController *)parent{

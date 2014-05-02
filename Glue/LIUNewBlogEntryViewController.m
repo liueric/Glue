@@ -8,34 +8,89 @@
 
 #import "LIUNewBlogEntryViewController.h"
 
-@interface LIUNewBlogEntryViewController ()
+@interface LIUNewBlogEntryViewController () <UITextFieldDelegate>
 
-@property (weak, nonatomic) IBOutlet UITextView *NewBlogEntryText;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *SaveAndDoneButton;
 
 @end
 
 @implementation LIUNewBlogEntryViewController
 
+@synthesize blogEntryText = _blogEntryText;
+@synthesize blogEntryTitle = _blogEntryTitle;
+@synthesize blogMainImage = _blogMainImage;
+@synthesize picker = _picker;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.SaveAndDoneButton.enabled = YES;
     }
     return self;
 }
 
 - (IBAction)backButtonClicked:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+    NSString *changedString = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    
+    [self validateSaveButtonForText:changedString];
+    
+    return YES;
+    
+}
+
+-(void) validateSaveButtonForText: (NSString *) text{
+    self.SaveAndDoneButton.enabled = ([text length] > 0);
 }
 
 - (IBAction)doneButtonClicked:(id)sender {
-    [self.NewBlogEntryText resignFirstResponder];
-    self.SaveAndDoneButton.title = @"Save";
+    [self.blogEntryText resignFirstResponder];
+    NSLog(@"\nSave button clicked!\n");
+    
+    NSString *newEntryTitle;
+    NSString *newEntryText;
+    UIImage *newEntryImage = [UIImage imageNamed:@"image_placeholder.png"];
+    
+    if (self.blogEntryText != nil) {
+        newEntryTitle = self.blogEntryTitle.text;
+    }
+    else{
+        newEntryTitle = @"New Entry Title";
+    }
+    
+    if (self.blogEntryText != nil) {
+        newEntryText = self.blogEntryText.text;
+    }
+    else{
+        newEntryText = @"New Entry Text";
+    }
+    
+    LIUBlogEntryModel *newEntry = [[LIUBlogEntryModel alloc] initWithEntry:newEntryTitle entry:newEntryText thumbImage:newEntryImage mainImage:newEntryImage];
+    
+//    if (self.completionHandler) {
+//        self.completionHandler(newEntry);
+//    }
+    
+    [self dismissViewControllerAnimated:YES completion:^(void){
+//        LIUMasterViewController *masterViewController = [LIUMasterViewController sharedInstance];
+//        [[masterViewController personalBlogEntries] insertObject:newEntry atIndex:0];
+        
+//        [[LIUMasterViewController sharedInstance]  newEntryEntered:newEntry];
+        NSMutableArray *sharedPersonalBlogEntries =[[LIUBlogListModel sharedModel] personalBlogEntries];
+        [sharedPersonalBlogEntries insertObject:newEntry atIndex:0];
+        //[sharedPersonalBlogEntries addObject:newEntry];
+        
+    }];
 }
 
 - (IBAction)backgroundTouched:(id)sender {
-    [self.NewBlogEntryText resignFirstResponder];
+    [self.blogEntryText resignFirstResponder];
 }
 
 - (void)viewDidLoad
@@ -63,4 +118,16 @@
 }
 */
 
+
+
+- (IBAction)addButtonTapped:(id)sender {
+    if (self.picker == nil) {
+        self.picker = [[UIImagePickerController alloc] init];
+        self.picker.delegate = self;
+        self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        self.picker.allowsEditing = NO;
+    }
+    
+    [self presentViewController:_picker animated:YES completion:nil];
+}
 @end
