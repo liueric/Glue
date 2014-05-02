@@ -22,6 +22,9 @@
 		A2A9286D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
 		A2A928751913085900B6A745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A2A928731913085900B6A745 /* InfoPlist.strings */; };
 		A2A928771913085900B6A745 /* GlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A928761913085900B6A745 /* GlueTests.m */; };
+		A2A92885191308CF00B6A745 /* LIUBlogEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A92884191308CF00B6A745 /* LIUBlogEntryModel.m */; };
+		A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A92887191308D800B6A745 /* LIUBlogEntryViewController.m */; };
+		A2A9288B191308D800B6A745 /* LIUNewBlogEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,12 @@
 		A2A928721913085900B6A745 /* GlueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GlueTests-Info.plist"; sourceTree = "<group>"; };
 		A2A928741913085900B6A745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A2A928761913085900B6A745 /* GlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlueTests.m; sourceTree = "<group>"; };
+		A2A92883191308CF00B6A745 /* LIUBlogEntryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUBlogEntryModel.h; sourceTree = "<group>"; };
+		A2A92884191308CF00B6A745 /* LIUBlogEntryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBlogEntryModel.m; sourceTree = "<group>"; };
+		A2A92886191308D800B6A745 /* LIUBlogEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUBlogEntryViewController.h; sourceTree = "<group>"; };
+		A2A92887191308D800B6A745 /* LIUBlogEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBlogEntryViewController.m; sourceTree = "<group>"; };
+		A2A92888191308D800B6A745 /* LIUNewBlogEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUNewBlogEntryViewController.h; sourceTree = "<group>"; };
+		A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUNewBlogEntryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +124,11 @@
 		A2A9284E1913085900B6A745 /* Glue */ = {
 			isa = PBXGroup;
 			children = (
+				A2A92882191308B400B6A745 /* Views */,
+				A2A92881191308AE00B6A745 /* Controllers */,
+				A2A92880191308A800B6A745 /* Models */,
 				A2A928571913085900B6A745 /* LIUAppDelegate.h */,
 				A2A928581913085900B6A745 /* LIUAppDelegate.m */,
-				A2A9285A1913085900B6A745 /* Main.storyboard */,
-				A2A9285D1913085900B6A745 /* LIUMasterViewController.h */,
-				A2A9285E1913085900B6A745 /* LIUMasterViewController.m */,
-				A2A928601913085900B6A745 /* LIUDetailViewController.h */,
-				A2A928611913085900B6A745 /* LIUDetailViewController.m */,
 				A2A928631913085900B6A745 /* Images.xcassets */,
 				A2A9284F1913085900B6A745 /* Supporting Files */,
 			);
@@ -155,6 +162,38 @@
 				A2A928731913085900B6A745 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A2A92880191308A800B6A745 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A2A92883191308CF00B6A745 /* LIUBlogEntryModel.h */,
+				A2A92884191308CF00B6A745 /* LIUBlogEntryModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A2A92881191308AE00B6A745 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2A9285D1913085900B6A745 /* LIUMasterViewController.h */,
+				A2A92886191308D800B6A745 /* LIUBlogEntryViewController.h */,
+				A2A92887191308D800B6A745 /* LIUBlogEntryViewController.m */,
+				A2A92888191308D800B6A745 /* LIUNewBlogEntryViewController.h */,
+				A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */,
+				A2A9285E1913085900B6A745 /* LIUMasterViewController.m */,
+				A2A928601913085900B6A745 /* LIUDetailViewController.h */,
+				A2A928611913085900B6A745 /* LIUDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A2A92882191308B400B6A745 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A2A9285A1913085900B6A745 /* Main.storyboard */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */,
+				A2A9288B191308D800B6A745 /* LIUNewBlogEntryViewController.m in Sources */,
+				A2A92885191308CF00B6A745 /* LIUBlogEntryModel.m in Sources */,
 				A2A928621913085900B6A745 /* LIUDetailViewController.m in Sources */,
 				A2A928551913085900B6A745 /* main.m in Sources */,
 				A2A9285F1913085900B6A745 /* LIUMasterViewController.m in Sources */,
