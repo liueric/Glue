@@ -17,6 +17,9 @@
 		A232FA711918797A0047455D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA701918797A0047455D /* Security.framework */; };
 		A232FA73191879830047455D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA72191879830047455D /* SystemConfiguration.framework */; };
 		A232FAD01918A5460047455D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FACF1918A5460047455D /* MainViewController.m */; };
+		A232FAD41918A8090047455D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FAD31918A8090047455D /* SWRevealViewController.m */; };
+		A232FAD71918AAC30047455D /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A232FAD51918AAC30047455D /* menu.png */; };
+		A232FAD81918AAC30047455D /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A232FAD61918AAC30047455D /* menu@2x.png */; };
 		A2A928491913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
 		A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284A1913085900B6A745 /* CoreGraphics.framework */; };
 		A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
@@ -63,6 +66,10 @@
 		A232FA72191879830047455D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A232FACE1918A5460047455D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../../Downloads/SlideOutNavigation/Navigation/Classes/MainViewController.h; sourceTree = "<group>"; };
 		A232FACF1918A5460047455D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../../Downloads/SlideOutNavigation/Navigation/Classes/MainViewController.m; sourceTree = "<group>"; };
+		A232FAD21918A8090047455D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		A232FAD31918A8090047455D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		A232FAD51918AAC30047455D /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../Downloads/SidebarDemoEmpty/SidebarDemo/menu.png; sourceTree = "<group>"; };
+		A232FAD61918AAC30047455D /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "../../Downloads/SidebarDemoEmpty/SidebarDemo/menu@2x.png"; sourceTree = "<group>"; };
 		A2A928451913085900B6A745 /* Glue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A928481913085900B6A745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2A9284A1913085900B6A745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -130,6 +137,15 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		A232FAD11918A8000047455D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A232FAD21918A8090047455D /* SWRevealViewController.h */,
+				A232FAD31918A8090047455D /* SWRevealViewController.m */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		A2A9283C1913085900B6A745 = {
 			isa = PBXGroup;
 			children = (
@@ -169,13 +185,14 @@
 		A2A9284E1913085900B6A745 /* Glue */ = {
 			isa = PBXGroup;
 			children = (
+				A232FAD11918A8000047455D /* Library */,
+				A2A928571913085900B6A745 /* LIUAppDelegate.h */,
+				A2A928581913085900B6A745 /* LIUAppDelegate.m */,
 				A232FA671918774A0047455D /* Framework */,
 				A2A9288C19131D3200B6A745 /* Resources */,
 				A2A92882191308B400B6A745 /* Views */,
 				A2A92881191308AE00B6A745 /* Controllers */,
 				A2A92880191308A800B6A745 /* Models */,
-				A2A928571913085900B6A745 /* LIUAppDelegate.h */,
-				A2A928581913085900B6A745 /* LIUAppDelegate.m */,
 				A2A928631913085900B6A745 /* Images.xcassets */,
 				A2A9284F1913085900B6A745 /* Supporting Files */,
 			);
@@ -254,6 +271,8 @@
 		A2A9288C19131D3200B6A745 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A232FAD51918AAC30047455D /* menu.png */,
+				A232FAD61918AAC30047455D /* menu@2x.png */,
 				A2A9288D19131D8E00B6A745 /* image_placeholder.png */,
 			);
 			name = Resources;
@@ -337,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A928641913085900B6A745 /* Images.xcassets in Resources */,
+				A232FAD81918AAC30047455D /* menu@2x.png in Resources */,
+				A232FAD71918AAC30047455D /* menu.png in Resources */,
 				A2A9288E19131D8E00B6A745 /* image_placeholder.png in Resources */,
 				A2A928531913085900B6A745 /* InfoPlist.strings in Resources */,
 				A2A9285C1913085900B6A745 /* Main.storyboard in Resources */,
@@ -369,6 +390,7 @@
 				A2A9285F1913085900B6A745 /* LIUMasterViewController.m in Sources */,
 				A232FA6619164F950047455D /* LIUFeedTableViewController.m in Sources */,
 				A2A928591913085900B6A745 /* LIUAppDelegate.m in Sources */,
+				A232FAD41918A8090047455D /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

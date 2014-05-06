@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "LIUBlogEntryModel.h"
 #import "LIUBlogListModel.h"
+#import "SWRevealViewController.h"
 
 @interface LIUMasterViewController : UITableViewController
 
 @property (strong) NSMutableArray *personalBlogEntries;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 //+(instancetype)sharedInstance;
 //+(void) newEntryEntered: (LIUBlogEntryModel *)newEntry;

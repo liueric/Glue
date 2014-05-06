@@ -10,9 +10,11 @@
 #import "LIUBlogEntryModel.h"
 #import "LIUBlogListModel.h"
 #import "Firebase/Firebase.h"
+#import "SWRevealViewController.h"
 
 
 @interface LIUFeedTableViewController : UITableViewController
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 
 @property NSMutableArray *feedBlogEntries;
 

@@ -14,22 +14,6 @@
 {
     // Override point for customization after application launch.
     
-//    LIUBlogEntryModel *entry1 = [[LIUBlogEntryModel alloc] initWithEntry:@"First Day!" entry:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." thumbImage:[UIImage imageNamed:@"image_placeholder.png"] mainImage:[UIImage imageNamed:@"image_placeholder.png"]];
-//    
-//    LIUBlogEntryModel *entry2 = [[LIUBlogEntryModel alloc] initWithEntry:@"Second Day!" entry:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." thumbImage:[UIImage imageNamed:@"image_placeholder.png"] mainImage:[UIImage imageNamed:@"image_placeholder.png"]];
-//    
-//    LIUBlogEntryModel *entry3 = [[LIUBlogEntryModel alloc] initWithEntry:@"Third Day!" entry:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." thumbImage:[UIImage imageNamed:@"image_placeholder.png"] mainImage:[UIImage imageNamed:@"image_placeholder.png"]];
-//    
-//    LIUBlogEntryModel *entry4 = [[LIUBlogEntryModel alloc] initWithEntry:@"Fourth Day!" entry:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." thumbImage:[UIImage imageNamed:@"image_placeholder.png"] mainImage:[UIImage imageNamed:@"image_placeholder.png"]];
-//    
-//    NSMutableArray *entries = [NSMutableArray arrayWithObjects:entry1,entry2,entry3,entry4, nil];
-//    
-//    UINavigationController *navController = (UINavigationController *) self.window.rootViewController;
-//    LIUMasterViewController *masterController = [navController.viewControllers objectAtIndex:0];
-//    
-//    masterController.personalBlogEntries = entries;
-    
-    
     return YES;
 }
 							

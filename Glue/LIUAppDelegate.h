@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "LIUBlogEntryModel.h"
 #import "LIUMasterViewController.h"
+#import "MainViewController.h"
 
 @interface LIUAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 @end
