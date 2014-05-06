@@ -35,6 +35,18 @@
 //    self.navigationItem.rightBarButtonItem = addButton;
     self.title = @"Yours";
     
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    refreshControl.tintColor = [UIColor grayColor];
+    [refreshControl addTarget:self action:@selector(updateTable) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+
+}
+
+-(void)updateTable{
+    [self.tableView reloadData];
+    
+    [self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning

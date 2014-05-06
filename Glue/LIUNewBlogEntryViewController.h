@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Firebase/Firebase.h"
 #import "LIUBlogEntryModel.h"
 #import "LIUMasterViewController.h"
 
@@ -25,6 +26,8 @@ typedef void(^LIUInputCompletionHandler)(LIUBlogEntryModel *newEntry);
 @property (weak, nonatomic) IBOutlet UITextView *blogEntryText;
 
 @property (strong, nonatomic) UIImagePickerController *picker;
+
+
 
 - (IBAction)addButtonTapped:(id)sender;
 

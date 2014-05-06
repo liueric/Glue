@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "LIUBlogEntryModel.h"
+#import "Firebase/Firebase.h"
 
 @interface LIUBlogListModel : NSObject
 

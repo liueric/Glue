@@ -27,6 +27,8 @@
 - (void)viewDidLoad
 {
     _feedBlogEntries = [[LIUBlogListModel sharedModel] feedBlogEntries];
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
@@ -35,6 +37,18 @@
     //    self.navigationItem.rightBarButtonItem = addButton;
     self.title = @"Feed";
     
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    refreshControl.tintColor = [UIColor grayColor];
+    [refreshControl addTarget:self action:@selector(updateTable) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    
+}
+
+-(void)updateTable{
+    [self.tableView reloadData];
+    
+    [self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning

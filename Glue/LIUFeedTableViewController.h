@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "LIUBlogEntryModel.h"
 #import "LIUBlogListModel.h"
+#import "Firebase/Firebase.h"
+
 
 @interface LIUFeedTableViewController : UITableViewController
 

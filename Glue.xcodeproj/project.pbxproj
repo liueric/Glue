@@ -16,6 +16,7 @@
 		A232FA6F191879710047455D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA6E191879710047455D /* CFNetwork.framework */; };
 		A232FA711918797A0047455D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA701918797A0047455D /* Security.framework */; };
 		A232FA73191879830047455D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA72191879830047455D /* SystemConfiguration.framework */; };
+		A232FAD01918A5460047455D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FACF1918A5460047455D /* MainViewController.m */; };
 		A2A928491913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
 		A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284A1913085900B6A745 /* CoreGraphics.framework */; };
 		A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
@@ -60,6 +61,8 @@
 		A232FA6E191879710047455D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A232FA701918797A0047455D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A232FA72191879830047455D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A232FACE1918A5460047455D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../../Downloads/SlideOutNavigation/Navigation/Classes/MainViewController.h; sourceTree = "<group>"; };
+		A232FACF1918A5460047455D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../../Downloads/SlideOutNavigation/Navigation/Classes/MainViewController.m; sourceTree = "<group>"; };
 		A2A928451913085900B6A745 /* Glue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A928481913085900B6A745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2A9284A1913085900B6A745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -222,6 +225,8 @@
 		A2A92881191308AE00B6A745 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A232FACE1918A5460047455D /* MainViewController.h */,
+				A232FACF1918A5460047455D /* MainViewController.m */,
 				A2A9285D1913085900B6A745 /* LIUMasterViewController.h */,
 				A2A9285E1913085900B6A745 /* LIUMasterViewController.m */,
 				A2A92886191308D800B6A745 /* LIUBlogEntryViewController.h */,
@@ -353,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A232FAD01918A5460047455D /* MainViewController.m in Sources */,
 				A232FA5A19138FEE0047455D /* LIUBlogListModel.m in Sources */,
 				A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */,
 				A232FA5D19163ECD0047455D /* LIUFeedViewController.m in Sources */,

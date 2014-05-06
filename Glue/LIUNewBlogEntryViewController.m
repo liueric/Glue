@@ -8,9 +8,12 @@
 
 #import "LIUNewBlogEntryViewController.h"
 
-@interface LIUNewBlogEntryViewController () <UITextFieldDelegate>
+@interface LIUNewBlogEntryViewController () <UITextFieldDelegate>{
+    Firebase *f;
+}
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *SaveAndDoneButton;
+
 
 @end
 
@@ -27,6 +30,9 @@
     if (self) {
         // Custom initialization
         self.SaveAndDoneButton.enabled = YES;
+        
+        Firebase *f = [[Firebase alloc] initWithUrl:@"https://glue.firebaseio.com/"];
+                
     }
     return self;
 }
@@ -53,8 +59,8 @@
     [self.blogEntryText resignFirstResponder];
     NSLog(@"\nSave button clicked!\n");
     
-    NSString *newEntryTitle;
-    NSString *newEntryText;
+    __block NSString *newEntryTitle;
+    __block NSString *newEntryText;
     UIImage *newEntryImage = [UIImage imageNamed:@"image_placeholder.png"];
     
     if (self.blogEntryText != nil) {
@@ -82,12 +88,32 @@
 //        [[masterViewController personalBlogEntries] insertObject:newEntry atIndex:0];
         
 //        [[LIUMasterViewController sharedInstance]  newEntryEntered:newEntry];
+        
         NSMutableArray *sharedPersonalBlogEntries =[[LIUBlogListModel sharedModel] personalBlogEntries];
-        [sharedPersonalBlogEntries insertObject:newEntry atIndex:0];
+        //[sharedPersonalBlogEntries insertObject:newEntry atIndex:0];
+        
+        
         //[sharedPersonalBlogEntries addObject:newEntry];
         
-    }];
-}
+        //Write new blog entry to firebase
+        Firebase *listref = [[Firebase alloc] initWithUrl:@"https://glue.firebaseio.com/PersonBlogFeed"];
+        Firebase *newPushRef = [listref childByAutoId];
+        [newPushRef setValue:@{@"Title":newEntryTitle,@"Text":newEntryText}];
+                               
+        
+        //Delete after testing begin
+        LIUBlogEntryModel *firebaseTestEntry = [[LIUBlogEntryModel alloc] initWithEntry:newEntryTitle entry:newEntryTitle thumbImage:[UIImage imageNamed:@"image_placeholder.png"] mainImage:[UIImage imageNamed:@"image_placeholder.png"]];
+        
+        //[sharedPersonalBlogEntries addObject:firebaseTestEntry];
+        
+        //Delete after testing end
+        
+        }];
+    
+    }
+
+
+    
 
 - (IBAction)backgroundTouched:(id)sender {
     [self.blogEntryText resignFirstResponder];
