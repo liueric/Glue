@@ -20,6 +20,8 @@
 		A232FAD41918A8090047455D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FAD31918A8090047455D /* SWRevealViewController.m */; };
 		A232FAD71918AAC30047455D /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = A232FAD51918AAC30047455D /* menu.png */; };
 		A232FAD81918AAC30047455D /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A232FAD61918AAC30047455D /* menu@2x.png */; };
+		A232FADB1918AEEA0047455D /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FADA1918AEEA0047455D /* SidebarViewController.m */; };
+		A232FADD1918B03B0047455D /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = A232FADC1918B03B0047455D /* news.png */; };
 		A2A928491913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
 		A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284A1913085900B6A745 /* CoreGraphics.framework */; };
 		A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
@@ -70,6 +72,9 @@
 		A232FAD31918A8090047455D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../Downloads/SWRevealViewController-master/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
 		A232FAD51918AAC30047455D /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../Downloads/SidebarDemoEmpty/SidebarDemo/menu.png; sourceTree = "<group>"; };
 		A232FAD61918AAC30047455D /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "../../Downloads/SidebarDemoEmpty/SidebarDemo/menu@2x.png"; sourceTree = "<group>"; };
+		A232FAD91918AEEA0047455D /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarViewController.h; path = ../../Downloads/SidebarDemoEmpty/SidebarDemo/SidebarViewController.h; sourceTree = "<group>"; };
+		A232FADA1918AEEA0047455D /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarViewController.m; path = ../../Downloads/SidebarDemoEmpty/SidebarDemo/SidebarViewController.m; sourceTree = "<group>"; };
+		A232FADC1918B03B0047455D /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = news.png; path = ../../Downloads/SidebarDemoEmpty/SidebarDemo/news.png; sourceTree = "<group>"; };
 		A2A928451913085900B6A745 /* Glue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A928481913085900B6A745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2A9284A1913085900B6A745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -242,6 +247,8 @@
 		A2A92881191308AE00B6A745 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A232FAD91918AEEA0047455D /* SidebarViewController.h */,
+				A232FADA1918AEEA0047455D /* SidebarViewController.m */,
 				A232FACE1918A5460047455D /* MainViewController.h */,
 				A232FACF1918A5460047455D /* MainViewController.m */,
 				A2A9285D1913085900B6A745 /* LIUMasterViewController.h */,
@@ -271,6 +278,7 @@
 		A2A9288C19131D3200B6A745 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A232FADC1918B03B0047455D /* news.png */,
 				A232FAD51918AAC30047455D /* menu.png */,
 				A232FAD61918AAC30047455D /* menu@2x.png */,
 				A2A9288D19131D8E00B6A745 /* image_placeholder.png */,
@@ -359,6 +367,7 @@
 				A232FAD81918AAC30047455D /* menu@2x.png in Resources */,
 				A232FAD71918AAC30047455D /* menu.png in Resources */,
 				A2A9288E19131D8E00B6A745 /* image_placeholder.png in Resources */,
+				A232FADD1918B03B0047455D /* news.png in Resources */,
 				A2A928531913085900B6A745 /* InfoPlist.strings in Resources */,
 				A2A9285C1913085900B6A745 /* Main.storyboard in Resources */,
 			);
@@ -379,6 +388,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A232FADB1918AEEA0047455D /* SidebarViewController.m in Sources */,
 				A232FAD01918A5460047455D /* MainViewController.m in Sources */,
 				A232FA5A19138FEE0047455D /* LIUBlogListModel.m in Sources */,
 				A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */,
