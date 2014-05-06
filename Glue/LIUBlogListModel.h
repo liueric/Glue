@@ -12,6 +12,7 @@
 @interface LIUBlogListModel : NSObject
 
 @property NSMutableArray *personalBlogEntries;
+@property NSMutableArray *feedBlogEntries;
 
 +(instancetype)sharedModel;
 

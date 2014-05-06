@@ -11,6 +11,7 @@
 @implementation LIUBlogListModel
 
 @synthesize personalBlogEntries = _personalBlogEntries;
+@synthesize feedBlogEntries = _feedBlogEntries;
 
 - (instancetype)init
 {
@@ -25,6 +26,8 @@
             LIUBlogEntryModel *entry4 = [[LIUBlogEntryModel alloc] initWithEntry:@"Fourth Day!" entry:@"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." thumbImage:[UIImage imageNamed:@"image_placeholder.png"] mainImage:[UIImage imageNamed:@"image_placeholder.png"]];
         
         self.personalBlogEntries = [[NSMutableArray alloc] initWithObjects:entry1,entry2,entry3,entry4, nil];
+        
+        self.feedBlogEntries = [[NSMutableArray alloc] initWithObjects:entry1,entry2,entry3, nil];
         
         
     }

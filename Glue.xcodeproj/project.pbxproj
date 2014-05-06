@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A232FA5A19138FEE0047455D /* LIUBlogListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FA5919138FEE0047455D /* LIUBlogListModel.m */; };
+		A232FA5D19163ECD0047455D /* LIUFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FA5C19163ECD0047455D /* LIUFeedViewController.m */; };
+		A232FA6619164F950047455D /* LIUFeedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A232FA6519164F950047455D /* LIUFeedTableViewController.m */; };
+		A232FA69191877AC0047455D /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA68191877AC0047455D /* Firebase.framework */; };
+		A232FA6B191879610047455D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA6A191879610047455D /* libicucore.dylib */; };
+		A232FA6D191879680047455D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA6C191879680047455D /* libc++.dylib */; };
+		A232FA6F191879710047455D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA6E191879710047455D /* CFNetwork.framework */; };
+		A232FA711918797A0047455D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA701918797A0047455D /* Security.framework */; };
+		A232FA73191879830047455D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A232FA72191879830047455D /* SystemConfiguration.framework */; };
 		A2A928491913085900B6A745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A928481913085900B6A745 /* Foundation.framework */; };
 		A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284A1913085900B6A745 /* CoreGraphics.framework */; };
 		A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A9284C1913085900B6A745 /* UIKit.framework */; };
@@ -42,6 +50,16 @@
 /* Begin PBXFileReference section */
 		A232FA5819138FEE0047455D /* LIUBlogListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUBlogListModel.h; sourceTree = "<group>"; };
 		A232FA5919138FEE0047455D /* LIUBlogListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUBlogListModel.m; sourceTree = "<group>"; };
+		A232FA5B19163ECD0047455D /* LIUFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUFeedViewController.h; sourceTree = "<group>"; };
+		A232FA5C19163ECD0047455D /* LIUFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUFeedViewController.m; sourceTree = "<group>"; };
+		A232FA6419164F950047455D /* LIUFeedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LIUFeedTableViewController.h; sourceTree = "<group>"; };
+		A232FA6519164F950047455D /* LIUFeedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LIUFeedTableViewController.m; sourceTree = "<group>"; };
+		A232FA68191877AC0047455D /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		A232FA6A191879610047455D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		A232FA6C191879680047455D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		A232FA6E191879710047455D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A232FA701918797A0047455D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A232FA72191879830047455D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A2A928451913085900B6A745 /* Glue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A928481913085900B6A745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A2A9284A1913085900B6A745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,9 +95,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A232FA73191879830047455D /* SystemConfiguration.framework in Frameworks */,
+				A232FA711918797A0047455D /* Security.framework in Frameworks */,
+				A232FA6F191879710047455D /* CFNetwork.framework in Frameworks */,
+				A232FA6D191879680047455D /* libc++.dylib in Frameworks */,
+				A232FA6B191879610047455D /* libicucore.dylib in Frameworks */,
 				A2A9284B1913085900B6A745 /* CoreGraphics.framework in Frameworks */,
 				A2A9284D1913085900B6A745 /* UIKit.framework in Frameworks */,
 				A2A928491913085900B6A745 /* Foundation.framework in Frameworks */,
+				A232FA69191877AC0047455D /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +120,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A232FA671918774A0047455D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 		A2A9283C1913085900B6A745 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +149,12 @@
 		A2A928471913085900B6A745 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A232FA72191879830047455D /* SystemConfiguration.framework */,
+				A232FA701918797A0047455D /* Security.framework */,
+				A232FA6E191879710047455D /* CFNetwork.framework */,
+				A232FA6C191879680047455D /* libc++.dylib */,
+				A232FA6A191879610047455D /* libicucore.dylib */,
+				A232FA68191877AC0047455D /* Firebase.framework */,
 				A2A928481913085900B6A745 /* Foundation.framework */,
 				A2A9284A1913085900B6A745 /* CoreGraphics.framework */,
 				A2A9284C1913085900B6A745 /* UIKit.framework */,
@@ -129,6 +166,7 @@
 		A2A9284E1913085900B6A745 /* Glue */ = {
 			isa = PBXGroup;
 			children = (
+				A232FA671918774A0047455D /* Framework */,
 				A2A9288C19131D3200B6A745 /* Resources */,
 				A2A92882191308B400B6A745 /* Views */,
 				A2A92881191308AE00B6A745 /* Controllers */,
@@ -192,6 +230,10 @@
 				A2A92889191308D800B6A745 /* LIUNewBlogEntryViewController.m */,
 				A2A928601913085900B6A745 /* LIUDetailViewController.h */,
 				A2A928611913085900B6A745 /* LIUDetailViewController.m */,
+				A232FA5B19163ECD0047455D /* LIUFeedViewController.h */,
+				A232FA5C19163ECD0047455D /* LIUFeedViewController.m */,
+				A232FA6419164F950047455D /* LIUFeedTableViewController.h */,
+				A232FA6519164F950047455D /* LIUFeedTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,11 +355,13 @@
 			files = (
 				A232FA5A19138FEE0047455D /* LIUBlogListModel.m in Sources */,
 				A2A9288A191308D800B6A745 /* LIUBlogEntryViewController.m in Sources */,
+				A232FA5D19163ECD0047455D /* LIUFeedViewController.m in Sources */,
 				A2A9288B191308D800B6A745 /* LIUNewBlogEntryViewController.m in Sources */,
 				A2A92885191308CF00B6A745 /* LIUBlogEntryModel.m in Sources */,
 				A2A928621913085900B6A745 /* LIUDetailViewController.m in Sources */,
 				A2A928551913085900B6A745 /* main.m in Sources */,
 				A2A9285F1913085900B6A745 /* LIUMasterViewController.m in Sources */,
+				A232FA6619164F950047455D /* LIUFeedTableViewController.m in Sources */,
 				A2A928591913085900B6A745 /* LIUAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +446,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				ONLY_ACTIVE_ARCH = YES;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -433,6 +478,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -443,6 +489,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
 				INFOPLIST_FILE = "Glue/Glue-Info.plist";
@@ -456,6 +506,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
 				INFOPLIST_FILE = "Glue/Glue-Info.plist";
@@ -480,6 +534,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "GlueTests/GlueTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -498,6 +556,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Glue/Glue-Prefix.pch";
 				INFOPLIST_FILE = "GlueTests/GlueTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					XCTest,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

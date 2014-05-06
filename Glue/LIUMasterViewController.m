@@ -33,7 +33,7 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonTapped:)];
 //    self.navigationItem.rightBarButtonItem = addButton;
-    self.title = @"Your Entries";
+    self.title = @"Yours";
     
 }
 
